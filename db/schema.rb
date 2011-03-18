@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110318141219) do
+ActiveRecord::Schema.define(:version => 20110318144750) do
 
   create_table "bursts", :force => true do |t|
     t.datetime "datetime"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(:version => 20110318141219) do
     t.datetime "start"
     t.datetime "end"
     t.decimal  "radius"
+    t.string   "title"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -6,6 +6,8 @@ class CreateEvents < ActiveRecord::Migration
       t.datetime :start
       t.datetime :end
       t.decimal :radius
+      t.string :title
+      t.text :description
 
       t.timestamps
     end
