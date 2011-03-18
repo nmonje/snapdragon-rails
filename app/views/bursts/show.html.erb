@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Datetime:</b>
+  <%= @burst.datetime %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @burst.event_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_burst_path(@burst) %> |
+<%= link_to 'Back', bursts_path %>

@@ -1,0 +1,2 @@
+module BurstsHelper
+end

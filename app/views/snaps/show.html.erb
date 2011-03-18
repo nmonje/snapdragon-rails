@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @snap.user_id %>
+</p>
+
+<p>
+  <b>Burst:</b>
+  <%= @snap.burst_id %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%= @snap.image_url %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @snap.lat %>
+</p>
+
+<p>
+  <b>Long:</b>
+  <%= @snap.long %>
+</p>
+
+<p>
+  <b>Datetime:</b>
+  <%= @snap.datetime %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @snap.event_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_snap_path(@snap) %> |
+<%= link_to 'Back', snaps_path %>
