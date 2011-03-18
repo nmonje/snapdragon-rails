@@ -11,11 +11,6 @@
 </p>
 
 <p>
-  <b>Image url:</b>
-  <%= @snap.image_url %>
-</p>
-
-<p>
   <b>Lat:</b>
   <%= @snap.lat %>
 </p>
@@ -35,6 +30,7 @@
   <%= @snap.event_id %>
 </p>
 
+<%= image_tag @snap.photo.url %>
 
 <%= link_to 'Edit', edit_snap_path(@snap) %> |
 <%= link_to 'Back', snaps_path %>

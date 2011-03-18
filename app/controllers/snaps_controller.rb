@@ -1,4 +1,6 @@
 class SnapsController < ApplicationController
+	skip_before_filter :verify_authenticity_token
+
   # GET /snaps
   # GET /snaps.xml
   def index

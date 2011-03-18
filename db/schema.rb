@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110318144750) do
+ActiveRecord::Schema.define(:version => 20110318161339) do
 
   create_table "bursts", :force => true do |t|
     t.datetime "datetime"
@@ -41,13 +41,16 @@ ActiveRecord::Schema.define(:version => 20110318144750) do
   create_table "snaps", :force => true do |t|
     t.integer  "user_id"
     t.integer  "burst_id"
-    t.string   "image_url"
     t.decimal  "lat"
     t.decimal  "long"
     t.datetime "datetime"
     t.integer  "event_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   create_table "users", :force => true do |t|
